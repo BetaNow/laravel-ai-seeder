@@ -2,14 +2,21 @@
     "preset": "laravel",
     "rules": {
         "phpdoc_align": true,
-        "phpdoc_summary": true,
+        "phpdoc_summary": false,
         "single_quote": false,
-        "array_syntax": [
-            "short"
-        ],
+        "array_syntax": {
+            "syntax": "short"
+        },
         "no_unused_imports": true,
         "ordered_imports": true,
         "phpdoc_order": true,
+        "cast_spaces": false,
+        "function_declaration": false,
+        "constant_case": false,
+        "concat_space": false,
+        "method_argument_space": false,
+        "no_trailing_comma_in_singleline": false,
+        "single_line_empty_body": false,
         "class_attributes_separation": {
             "elements": {
                 "method": "one"

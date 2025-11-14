@@ -24,5 +24,15 @@
         "laravel/pint": "^1.13"
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\AiSeeder\\AiSeederServiceProvider"
+            ],
+            "aliases": {
+                "AiSeeder": "Vendor\\AiSeeder\\Facades\\AiSeeder"
+            }
+        }
+    }
 }
