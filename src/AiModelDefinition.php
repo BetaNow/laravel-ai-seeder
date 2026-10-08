@@ -35,13 +35,33 @@ abstract class AiModelDefinition
     }
 
     /**
+     * Returns the fields the LLM should generate.
+     *
+     * @return array<string, Ai> The AI-generated fields keyed by column name.
+     */
+    public function aiFields (): array
+    {
+        return array_filter($this->fields(), fn (mixed $field) => $field instanceof Ai);
+    }
+
+    /**
+     * Returns the fields resolved locally: literals and Faker closures.
+     *
+     * @return array<string, mixed> The local fields keyed by column name.
+     */
+    public function localFields (): array
+    {
+        return array_filter($this->fields(), fn (mixed $field) => ! $field instanceof Ai);
+    }
+
+    /**
      * Returns a Faker instance for generating fake data.
      *
      * @return FakerGenerator An instance of the Faker generator.
      */
     public function faker (): FakerGenerator
     {
-        if (!$this->faker) {
+        if (! $this->faker) {
             $this->faker = Factory::create();
         }
 

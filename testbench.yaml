@@ -1,0 +1,6 @@
+providers:
+  - Vendor\AiSeeder\AiSeederServiceProvider
+  - Workbench\App\Providers\WorkbenchServiceProvider
+
+migrations:
+  - workbench/database/migrations

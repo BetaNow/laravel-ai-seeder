@@ -6,9 +6,27 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   phpunit:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { php: '8.2', testbench: '^10.0' }
+          - { php: '8.3', testbench: '^10.0' }
+          - { php: '8.3', testbench: '^11.0' }
+          - { php: '8.4', testbench: '^10.0' }
+          - { php: '8.4', testbench: '^11.0' }
+          - { php: '8.5', testbench: '^10.0' }
+          - { php: '8.5', testbench: '^11.0' }
+
+    name: PHP ${{ matrix.php }} / Testbench ${{ matrix.testbench }}
 
     steps:
       - uses: actions/checkout@v4
@@ -16,11 +34,15 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
+          php-version: ${{ matrix.php }}
+          extensions: pdo, sqlite, pdo_sqlite, curl, mbstring
           coverage: none
 
+      - name: Select Laravel version
+        run: composer require "orchestra/testbench:${{ matrix.testbench }}" --dev --no-update --no-interaction
+
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-interaction
+        run: composer update --prefer-dist --no-progress --no-interaction
 
       - name: Run tests
         run: vendor/bin/phpunit --colors=always

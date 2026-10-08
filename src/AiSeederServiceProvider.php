@@ -3,6 +3,8 @@
 namespace Vendor\AiSeeder;
 
 use Illuminate\Support\ServiceProvider;
+use Vendor\AiSeeder\Console\SeedCommand;
+use Vendor\AiSeeder\Generation\RowGenerator;
 
 /**
  * AiSeederServiceProvider is a service provider that manages the registration and bootstrapping of services related to
@@ -25,10 +27,23 @@ class AiSeederServiceProvider extends ServiceProvider
             return new AiFactoryManager($app['config']);
         });
 
+        $this->app->singleton(RowGenerator::class, function () {
+            return new RowGenerator;
+        });
+
+        $this->app->singleton(SeedRunner::class, function ($app) {
+            return new SeedRunner(
+                $app->make(RowGenerator::class),
+                $app->make(AiFactoryManager::class),
+                $app['config']
+            );
+        });
+
         $this->app->singleton(AiManager::class, function ($app) {
             return new AiManager(
                 $app->make(AiFactoryManager::class),
-                $app['config']
+                $app['config'],
+                $app->make(SeedRunner::class)
             );
         });
 
@@ -46,6 +61,8 @@ class AiSeederServiceProvider extends ServiceProvider
             $this->publishes([
                 $this->configFile() => $this->publishPath(),
             ], 'ai-seeder-config');
+
+            $this->commands([SeedCommand::class]);
         }
     }
 
