@@ -1,7 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Drivers;
+namespace BetaNow\AiSeeder\Drivers;
 
+use BetaNow\AiSeeder\Contracts\AiDriver;
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Exceptions\MissingApiKey;
 use GuzzleHttp\Exception\TransferException;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\PendingRequest;
@@ -12,10 +16,6 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Sleep;
 use Illuminate\Support\Str;
 use Throwable;
-use Vendor\AiSeeder\Contracts\AiDriver;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Exceptions\MissingApiKey;
 
 /**
  * Driver for any server speaking the OpenAI chat-completions wire format (OpenAI, Ollama, LM Studio, llama.cpp).

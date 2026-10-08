@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use ReflectionClass;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
 
 /**
  * Manages AI-related configurations and factories, and is the entry point for generating and seeding rows.

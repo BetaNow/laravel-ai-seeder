@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Exceptions;
+namespace BetaNow\AiSeeder\Exceptions;
 
 /**
  * Thrown for an invalid definition, configuration value or argument.
@@ -36,7 +36,7 @@ final class InvalidDefinition extends AiSeederException
 
     public static function notADefinition (string $class): self
     {
-        return new self("[{$class}] must be a class extending Vendor\\AiSeeder\\AiModelDefinition.");
+        return new self("[{$class}] must be a class extending BetaNow\\AiSeeder\\AiModelDefinition.");
     }
 
     /**

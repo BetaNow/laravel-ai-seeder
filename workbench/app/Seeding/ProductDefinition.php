@@ -2,10 +2,10 @@
 
 namespace Workbench\App\Seeding;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
 use Faker\Generator;
 use Illuminate\Support\Str;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
 
 /**
  * Demo definition: an outdoor-gear shop. AI writes the product text, Faker/literals fill the rest.

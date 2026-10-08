@@ -55,10 +55,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\AiSeeder\\AiSeederServiceProvider"
+                "BetaNow\\AiSeeder\\AiSeederServiceProvider"
             ],
             "aliases": {
-                "AiSeeder": "Vendor\\AiSeeder\\Facades\\AiSeeder"
+                "AiSeeder": "BetaNow\\AiSeeder\\Facades\\AiSeeder"
             }
         }
     }

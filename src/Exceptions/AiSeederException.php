@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Exceptions;
+namespace BetaNow\AiSeeder\Exceptions;
 
 use RuntimeException;
 

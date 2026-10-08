@@ -1,14 +1,14 @@
 <?php
 
-namespace Vendor\AiSeeder\Generation;
+namespace BetaNow\AiSeeder\Generation;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
+use BetaNow\AiSeeder\Contracts\AiDriver;
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Exceptions\UnparseableResponse;
 use Closure;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
-use Vendor\AiSeeder\Contracts\AiDriver;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Exceptions\UnparseableResponse;
 
 /**
  * Generates rows for a definition: batches the work, asks the LLM for the AI fields, validates the answer

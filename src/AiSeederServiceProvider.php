@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
+use BetaNow\AiSeeder\Console\SeedCommand;
+use BetaNow\AiSeeder\Generation\RowGenerator;
 use Illuminate\Support\ServiceProvider;
-use Vendor\AiSeeder\Console\SeedCommand;
-use Vendor\AiSeeder\Generation\RowGenerator;
 
 /**
  * AiSeederServiceProvider is a service provider that manages the registration and bootstrapping of services related to

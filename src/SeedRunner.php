@@ -1,14 +1,14 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Generation\RowGenerator;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Collection;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Generation\RowGenerator;
 
 /**
  * Generates rows with the configured driver and stores them atomically.

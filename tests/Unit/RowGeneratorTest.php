@@ -1,15 +1,15 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\AiModelDefinition;
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Generation\RowGenerator;
+use BetaNow\AiSeeder\Tests\Support\ArrayDriver;
+use BetaNow\AiSeeder\Tests\Support\BuildsProductRows;
 use Faker\Generator;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\AiModelDefinition;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Generation\RowGenerator;
-use Vendor\AiSeeder\Tests\Support\ArrayDriver;
-use Vendor\AiSeeder\Tests\Support\BuildsProductRows;
 use Workbench\App\Seeding\ProductDefinition;
 
 class RowGeneratorTest extends TestCase

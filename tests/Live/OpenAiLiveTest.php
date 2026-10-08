@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Live;
+namespace BetaNow\AiSeeder\Tests\Live;
 
+use BetaNow\AiSeeder\Facades\AiSeeder;
+use BetaNow\AiSeeder\Tests\TestCase;
 use PHPUnit\Framework\Attributes\Group;
-use Vendor\AiSeeder\Facades\AiSeeder;
-use Vendor\AiSeeder\Tests\TestCase;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 

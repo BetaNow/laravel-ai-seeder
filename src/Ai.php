@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
 use DateTimeImmutable;
 use UnexpectedValueException;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
 
 /**
  * Describes a field whose value the LLM should generate, and validates what comes back.

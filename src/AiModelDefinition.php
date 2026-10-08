@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
 use Faker\Factory;
 use Faker\Generator as FakerGenerator;

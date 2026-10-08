@@ -1,9 +1,9 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Support;
+namespace BetaNow\AiSeeder\Tests\Support;
 
+use BetaNow\AiSeeder\Contracts\AiDriver;
 use RuntimeException;
-use Vendor\AiSeeder\Contracts\AiDriver;
 
 /**
  * Answers with queued replies and records every prompt it receives.

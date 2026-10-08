@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Exceptions;
+namespace BetaNow\AiSeeder\Exceptions;
 
 /**
  * Thrown when a provider reply is not the JSON structure the prompt asked for.

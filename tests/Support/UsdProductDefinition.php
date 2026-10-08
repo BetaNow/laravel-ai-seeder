@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Support;
+namespace BetaNow\AiSeeder\Tests\Support;
 
 use Workbench\App\Seeding\ProductDefinition;
 

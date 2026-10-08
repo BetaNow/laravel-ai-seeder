@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Contracts;
+namespace BetaNow\AiSeeder\Contracts;
 
 /**
  * Talks to an LLM provider.

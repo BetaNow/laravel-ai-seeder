@@ -1,5 +1,5 @@
 providers:
-  - Vendor\AiSeeder\AiSeederServiceProvider
+  - BetaNow\AiSeeder\AiSeederServiceProvider
   - Workbench\App\Providers\WorkbenchServiceProvider
 
 migrations:

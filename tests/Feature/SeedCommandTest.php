@@ -1,16 +1,16 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
+use BetaNow\AiSeeder\Tests\Support\AbstractProductDefinition;
+use BetaNow\AiSeeder\Tests\Support\ConstructorArgumentDefinition;
+use BetaNow\AiSeeder\Tests\Support\SecondProduct;
+use BetaNow\AiSeeder\Tests\Support\UsdProductDefinition;
+use BetaNow\AiSeeder\Tests\TestCase;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use stdClass;
-use Vendor\AiSeeder\Tests\Support\AbstractProductDefinition;
-use Vendor\AiSeeder\Tests\Support\ConstructorArgumentDefinition;
-use Vendor\AiSeeder\Tests\Support\SecondProduct;
-use Vendor\AiSeeder\Tests\Support\UsdProductDefinition;
-use Vendor\AiSeeder\Tests\TestCase;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 

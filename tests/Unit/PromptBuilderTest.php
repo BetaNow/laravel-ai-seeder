@@ -1,12 +1,12 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Generation\PromptBuilder;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Generation\PromptBuilder;
 use Workbench\App\Seeding\ProductDefinition;
 
 class PromptBuilderTest extends TestCase

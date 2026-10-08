@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Exceptions;
+namespace BetaNow\AiSeeder\Exceptions;
 
 /**
  * Thrown when rows could not be generated or stored.

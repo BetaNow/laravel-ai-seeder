@@ -1,9 +1,9 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Tests\Support\BuildsProductRows;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\Tests\Support\BuildsProductRows;
 
 class BuildsProductRowsTest extends TestCase
 {

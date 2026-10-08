@@ -1,14 +1,14 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests;
+namespace BetaNow\AiSeeder\Tests;
 
+use BetaNow\AiSeeder\AiSeederServiceProvider;
+use BetaNow\AiSeeder\Facades\AiSeeder;
+use BetaNow\AiSeeder\Tests\Support\BuildsProductRows;
 use Closure;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Vendor\AiSeeder\AiSeederServiceProvider;
-use Vendor\AiSeeder\Facades\AiSeeder;
-use Vendor\AiSeeder\Tests\Support\BuildsProductRows;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 

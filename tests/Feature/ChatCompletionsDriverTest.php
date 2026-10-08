@@ -1,7 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
+use BetaNow\AiSeeder\Drivers\ChatCompletionsDriver;
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\MissingApiKey;
+use BetaNow\AiSeeder\Tests\TestCase;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException as GuzzleRequestException;
 use GuzzleHttp\Exception\TransferException;
@@ -11,10 +15,6 @@ use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Sleep;
 use ReflectionMethod;
-use Vendor\AiSeeder\Drivers\ChatCompletionsDriver;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\MissingApiKey;
-use Vendor\AiSeeder\Tests\TestCase;
 
 class ChatCompletionsDriverTest extends TestCase
 {

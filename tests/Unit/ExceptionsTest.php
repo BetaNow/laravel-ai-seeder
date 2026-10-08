@@ -1,13 +1,13 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Exceptions\AiSeederException;
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Exceptions\MissingApiKey;
+use BetaNow\AiSeeder\Exceptions\UnparseableResponse;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\Exceptions\AiSeederException;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Exceptions\MissingApiKey;
-use Vendor\AiSeeder\Exceptions\UnparseableResponse;
 
 class ExceptionsTest extends TestCase
 {

@@ -1,9 +1,12 @@
 <p align="center"><img src="art/logo.png" width="400" alt="AI Seeder"></p>
 
 <p align="center">
+<a href="https://github.com/BetaNow/laravel-ai-seeder/actions"><img src="https://github.com/BetaNow/laravel-ai-seeder/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+<a href="https://packagist.org/packages/betanow/laravel-ai-seeder"><img src="https://img.shields.io/packagist/dt/betanow/laravel-ai-seeder" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/betanow/laravel-ai-seeder"><img src="https://img.shields.io/packagist/v/betanow/laravel-ai-seeder" alt="Latest Stable Version"></a>
 <img src="https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white" alt="PHP 8.2+">
 <img src="https://img.shields.io/badge/Laravel-12%20%7C%2013-FF2D20?logo=laravel&logoColor=white" alt="Laravel 12 | 13">
-<img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
 </p>
 
 ## About AI Seeder
@@ -20,7 +23,7 @@ plain values take care of everything else.
 ## Installation
 
 ```bash
-composer require vendor/ai-seeder
+composer require betanow/laravel-ai-seeder
 php artisan vendor:publish --tag=ai-seeder-config
 ```
 
@@ -37,9 +40,9 @@ Describe a model:
 ```php
 namespace App\Seeding;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
 use Illuminate\Support\Str;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
 
 class ProductDefinition extends AiModelDefinition
 {
@@ -77,8 +80,8 @@ php artisan ai-seeder:seed Product --count=25
 
 ## Documentation
 
-The full documentation lives in the [GitHub Wiki](../../wiki): installation, configuration, writing definitions,
-seeding, how it works, troubleshooting and testing.
+The full documentation lives in the [GitHub Wiki](https://github.com/BetaNow/laravel-ai-seeder/wiki): installation,
+configuration, writing definitions, seeding, how it works, troubleshooting and testing.
 
 ## Testing
 
@@ -96,8 +99,8 @@ sending a pull request, make sure `vendor/bin/phpunit` and `vendor/bin/pint --te
 ## Security Vulnerabilities
 
 If you discover a security vulnerability, please report it privately through the repository's
-[Security tab](../../security) instead of opening a public issue.
+[Security tab](https://github.com/BetaNow/laravel-ai-seeder/security) instead of opening a public issue.
 
 ## License
 
-AI Seeder is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+AI Seeder is open-sourced software licensed under the [MIT license](LICENSE.md).

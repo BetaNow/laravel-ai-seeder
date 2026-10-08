@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Generation;
+namespace BetaNow\AiSeeder\Generation;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\Exceptions\UnparseableResponse;
 use JsonException;
 use UnexpectedValueException;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\Exceptions\UnparseableResponse;
 
 /**
  * Turns an LLM reply into validated rows.

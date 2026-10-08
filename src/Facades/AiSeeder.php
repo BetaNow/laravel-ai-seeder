@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Facades;
+namespace BetaNow\AiSeeder\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

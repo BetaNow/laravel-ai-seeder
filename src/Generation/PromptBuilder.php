@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Generation;
+namespace BetaNow\AiSeeder\Generation;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
 use JsonException;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
 
 /**
  * Builds the system and user messages sent to the LLM.

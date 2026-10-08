@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
-use Vendor\AiSeeder\AiManager;
-use Vendor\AiSeeder\Facades\AiSeeder;
-use Vendor\AiSeeder\Tests\TestCase;
+use BetaNow\AiSeeder\AiManager;
+use BetaNow\AiSeeder\Facades\AiSeeder;
+use BetaNow\AiSeeder\Tests\TestCase;
 
 class ServiceProviderTest extends TestCase
 {

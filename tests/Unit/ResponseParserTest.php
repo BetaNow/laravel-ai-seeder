@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Exceptions\UnparseableResponse;
+use BetaNow\AiSeeder\Generation\ResponseParser;
+use BetaNow\AiSeeder\Tests\Support\BuildsProductRows;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\Exceptions\UnparseableResponse;
-use Vendor\AiSeeder\Generation\ResponseParser;
-use Vendor\AiSeeder\Tests\Support\BuildsProductRows;
 use Workbench\App\Seeding\ProductDefinition;
 
 class ResponseParserTest extends TestCase

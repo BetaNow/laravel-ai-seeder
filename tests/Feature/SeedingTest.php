@@ -1,16 +1,16 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Exceptions\MissingApiKey;
+use BetaNow\AiSeeder\Facades\AiSeeder;
+use BetaNow\AiSeeder\Tests\Support\DuplicateSlugDefinition;
+use BetaNow\AiSeeder\Tests\TestCase;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use stdClass;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Exceptions\MissingApiKey;
-use Vendor\AiSeeder\Facades\AiSeeder;
-use Vendor\AiSeeder\Tests\Support\DuplicateSlugDefinition;
-use Vendor\AiSeeder\Tests\TestCase;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Smoke;
+namespace BetaNow\AiSeeder\Tests\Smoke;
 
+use BetaNow\AiSeeder\Exceptions\GenerationFailed;
+use BetaNow\AiSeeder\Facades\AiSeeder;
+use BetaNow\AiSeeder\Tests\TestCase;
 use PHPUnit\Framework\Attributes\Group;
 use RuntimeException;
 use Symfony\Component\Process\Process;
-use Vendor\AiSeeder\Exceptions\GenerationFailed;
-use Vendor\AiSeeder\Facades\AiSeeder;
-use Vendor\AiSeeder\Tests\TestCase;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 

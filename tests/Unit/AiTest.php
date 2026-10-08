@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
 
 class AiTest extends TestCase
 {

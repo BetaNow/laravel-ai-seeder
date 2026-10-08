@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\AiSeeder\Exceptions;
+namespace BetaNow\AiSeeder\Exceptions;
 
 /**
  * Thrown before any HTTP call when a driver needs an API key and none is configured.

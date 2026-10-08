@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
-use Vendor\AiSeeder\AiFactoryManager;
-use Vendor\AiSeeder\Drivers\ChatCompletionsDriver;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Tests\TestCase;
+use BetaNow\AiSeeder\AiFactoryManager;
+use BetaNow\AiSeeder\Drivers\ChatCompletionsDriver;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Tests\TestCase;
 
 class AiFactoryManagerTest extends TestCase
 {

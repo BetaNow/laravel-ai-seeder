@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder;
+namespace BetaNow\AiSeeder;
 
+use BetaNow\AiSeeder\Contracts\AiDriver;
+use BetaNow\AiSeeder\Drivers\ChatCompletionsDriver;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Vendor\AiSeeder\Contracts\AiDriver;
-use Vendor\AiSeeder\Drivers\ChatCompletionsDriver;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
 
 /**
  * Handles the management of AI factory drivers and their configurations.

@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Unit;
+namespace BetaNow\AiSeeder\Tests\Unit;
 
+use BetaNow\AiSeeder\Ai;
+use BetaNow\AiSeeder\AiModelDefinition;
 use Faker\Generator;
 use PHPUnit\Framework\TestCase;
-use Vendor\AiSeeder\Ai;
-use Vendor\AiSeeder\AiModelDefinition;
 use Workbench\App\Seeding\ProductDefinition;
 
 class AiModelDefinitionTest extends TestCase

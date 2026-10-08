@@ -1,13 +1,13 @@
 <?php
 
-namespace Vendor\AiSeeder\Console;
+namespace BetaNow\AiSeeder\Console;
 
+use BetaNow\AiSeeder\AiManager;
+use BetaNow\AiSeeder\Exceptions\AiSeederException;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\SeedRunner;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Formatter\OutputFormatter;
-use Vendor\AiSeeder\AiManager;
-use Vendor\AiSeeder\Exceptions\AiSeederException;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\SeedRunner;
 
 /**
  * Seeds registered Eloquent models with AI-generated rows.

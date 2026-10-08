@@ -1,13 +1,13 @@
 <?php
 
-namespace Vendor\AiSeeder\Tests\Feature;
+namespace BetaNow\AiSeeder\Tests\Feature;
 
+use BetaNow\AiSeeder\AiManager;
+use BetaNow\AiSeeder\Exceptions\InvalidDefinition;
+use BetaNow\AiSeeder\Tests\Support\AbstractProductDefinition;
+use BetaNow\AiSeeder\Tests\Support\ConstructorArgumentDefinition;
+use BetaNow\AiSeeder\Tests\TestCase;
 use stdClass;
-use Vendor\AiSeeder\AiManager;
-use Vendor\AiSeeder\Exceptions\InvalidDefinition;
-use Vendor\AiSeeder\Tests\Support\AbstractProductDefinition;
-use Vendor\AiSeeder\Tests\Support\ConstructorArgumentDefinition;
-use Vendor\AiSeeder\Tests\TestCase;
 use Workbench\App\Models\Product;
 use Workbench\App\Seeding\ProductDefinition;
 
